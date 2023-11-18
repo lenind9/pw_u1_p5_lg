@@ -12,7 +12,7 @@
 }
 
 .menu{
-    background: #6485F6;
+    background: rgb(235, 176, 74);
     text-align: left;
 }
 
@@ -29,7 +29,58 @@ body{
 
 .agrupar{
     border: 1px solid black;
-    background: white;
+    background: #fffab0;
     width: 900px;
-    margin: 15px auto;
+    margin: 20px auto;
+}
+
+.cabecera{
+    background: rgb(235, 176, 74);
+    border: 1px solid #999999;
+    padding: 20px;
+}
+
+.seccion{
+    float: left;
+    width: 600px;
+    margin: 10px;
+}
+
+article{
+    background: #fffbcc;
+    border: 5px double rgb(136, 78, 27);
+    margin-bottom: 15px;
+    padding: 20px;
+}
+
+time{
+    color: rgb(150, 181, 26);
+}
+
+article footer{
+    text-align: right;
+}
+
+#idreferencias{
+    width: 250px;
+    float: right;
+    margin: 20px 0px;
+    margin-right: 20px;
+}
+
+.pie{
+    clear: both;
+}
+
+#idreferencias blockquote{
+    border: 1px solid black;
+    padding: 10px;
+    background: rgb(235, 176, 74);
+    margin-bottom: 5px;
+}
+
+img{
+    width: 440px;
+    height: 270px;
+    margin: 20px auto;
 }

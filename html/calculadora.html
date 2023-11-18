@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Mi Calculadora</h1>
+    </header>
+    <nav>
+
+    </nav>
+    <section>
+        <label for="idnumero1">Número 1: </label>
+        <input type="number" id="idnumero1">
+        <label for="idnumero2">Número 2: </label>
+        <input type="number" id="idnumero2">
+        
+        <img id="idimagen1" src="https://img.wattpad.com/41999411bef77d434ddc24694b9cdeb2eb0f5871/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f7053477450566f4e7779794949673d3d2d313132353135333737392e313661316337653733666631386138353534303037373433313434332e6a7067" alt="No se pudo cargar la imagen">
+        
+        <button onclick="document.getElementById('idnumero1').style.color='blue'">Cambiar Estilo 1</button>
+        <button onclick="document.getElementById('idnumero2').style.background='red'">Cambiar Estilo 2</button>
+        <button onclick="document.getElementById('idimagen1').src='https://media.tenor.com/4ia58csaI_sAAAAM/cat-war.gif'">Cambiar Imagen</button>
+        <button onclick="document.getElementById('idResultado').innerHTML=1+3">Presentar Resultado: </button>
+        <button onclick="document.getElementById('idDiv').innerHTML='<button>Hola</button>'">Agregar Elemento: </button>
+        <label id="idResultado" for=""></label>
+
+        <div id="idDiv">
+            <!--<button>Hola</button>-->
+        </div>
+    </section>
+    <footer>
+        Todos los derechos reservados
+    </footer>
+    
+</body>
+</html>
