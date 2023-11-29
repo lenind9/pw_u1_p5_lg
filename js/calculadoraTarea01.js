@@ -5,8 +5,10 @@ let operacionActual = '';
 function asignarNumero(valor) {
     if (operacionActual === '') {
         numero1 += valor;
+        document.getElementById('resultado').innerText = numero1;
     } else {
         numero2 += valor;
+        document.getElementById('resultado').innerText = numero2;
     }
 }
 

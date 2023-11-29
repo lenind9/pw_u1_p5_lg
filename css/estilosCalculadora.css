@@ -46,3 +46,7 @@ label {
 h1 {
     text-align: center;
 }
+
+button:hover{
+    background-color: lightblue;
+}
