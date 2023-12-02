@@ -26,14 +26,13 @@
                 <div id="resultado" class="display">
                     Resultado
                 </div>
-                <button onclick="resetear()">C</button>
-                <button>&larr;</button>
-                <button onclick="agregarOperacion('%')">%</button>
+                <button class="col-2" onclick="resetear()">C</button>
+                <button onclick="borrarDigito()">&larr;</button>
                 <button onclick="agregarOperacion('/')">/</button>
                 <button onclick="asignarNumero(7)">7</button>
                 <button onclick="asignarNumero(8)">8</button>
                 <button onclick="asignarNumero(9)">9</button>
-                <button onclick="agregarOperacion('*')">*</button>
+                <button onclick="agregarOperacion('x')">x</button>
                 <button onclick="asignarNumero(4)">4</button>
                 <button onclick="asignarNumero(5)">5</button>
                 <button onclick="asignarNumero(6)">6</button>
@@ -42,8 +41,8 @@
                 <button onclick="asignarNumero(2)">2</button>
                 <button onclick="asignarNumero(3)">3</button>
                 <button onclick="agregarOperacion('+')">+</button>
-                <button onclick="asignarNumero(0)">0</button>
-                <button>.</button>
+                <button class="col-2" onclick="asignarNumero(0)">0</button>
+                <button onclick="asignarNumero('.')">.</button>
                 <button onclick="calcular()">=</button>
             </div>
         </div>

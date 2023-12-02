@@ -27,7 +27,7 @@ function calcular() {
         case '-':
             resultado = numero1 - numero2;
             break;
-        case '*':
+        case 'x':
             resultado = numero1 * numero2;
             break;
         case '/':
@@ -37,9 +37,6 @@ function calcular() {
                 resultado = 'Error';
             }
             break;
-        case '%':
-            resultado = numero1 % numero2;
-            break;
     }
     actualizarLabel(resultado);
 }
@@ -48,7 +45,17 @@ function resetear() {
     numero1 = '';
     numero2 = '';
     operacionActual = '';
-    document.getElementById('resultado').innerText = '';
+    document.getElementById('resultado').innerText = 'Resultado';
+}
+
+function borrarDigito() {
+    if (operacionActual === '') {
+        numero1 = numero1.slice(0, -1);
+        actualizarLabel(numero1);
+    } else {
+        numero2 = numero2.slice(0, -1);
+        actualizarLabel(numero2);
+    }
 }
 
 function actualizarLabel(valor) {
