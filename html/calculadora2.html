@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <script src="../js/calculadora2.js">
+
+    </script>
+
     <link rel="stylesheet" href="../css/calculadora2.css">
 </head>
 
@@ -19,27 +23,28 @@
     <section>
         <div class="container">
             <div class="calculadora">
-                <div class="display">
+                <div id="resultado" class="display">
                     Resultado
                 </div>
-                <button>C</button>
+                <button onclick="resetear()">C</button>
                 <button>&larr;</button>
-                <button>&#37;</button>
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button>&#215;</button>
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button>&#8722;</button>
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>&#43;</button>
-                <button>0</button>
-                <button>&#46;</button>
-                <button>&#61;</button>
+                <button onclick="agregarOperacion('%')">%</button>
+                <button onclick="agregarOperacion('/')">/</button>
+                <button onclick="asignarNumero(7)">7</button>
+                <button onclick="asignarNumero(8)">8</button>
+                <button onclick="asignarNumero(9)">9</button>
+                <button onclick="agregarOperacion('*')">*</button>
+                <button onclick="asignarNumero(4)">4</button>
+                <button onclick="asignarNumero(5)">5</button>
+                <button onclick="asignarNumero(6)">6</button>
+                <button onclick="agregarOperacion('-')">-</button>
+                <button onclick="asignarNumero(1)">1</button>
+                <button onclick="asignarNumero(2)">2</button>
+                <button onclick="asignarNumero(3)">3</button>
+                <button onclick="agregarOperacion('+')">+</button>
+                <button onclick="asignarNumero(0)">0</button>
+                <button>.</button>
+                <button onclick="calcular()">=</button>
             </div>
         </div>
     </section>
