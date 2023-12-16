@@ -5,7 +5,7 @@ const estudiantes = [{nombre: 'Lenin', apellido:'Guananga'},
 {nombre: 'David', apellido:'Coronel'},
 {nombre: 'Nicolas', apellido:'Lema'},
 {nombre: 'Ailine', apellido:'Molina'},
-{nombre: 'Francisca', apellido:'Sagredo'}];
+{nombre: '', apellido:'Sagredo'}];
 
 console.log(estudiantes)
 console.table(estudiantes)
@@ -42,6 +42,9 @@ const app = Vue.createApp({
             if (event.charCode === 13) {
                 this.agregarEstudiante();
             }
+        },
+        presionandoEnterMod() {
+            console.log("Presionando enter mod")
         }
     },
     watch:{
@@ -52,7 +55,7 @@ const app = Vue.createApp({
             mensaje: 'Hola mundo desde Vue.JS',
             valor: 100,
             lista: estudiantes,
-            nombre: null,
+            nombre: undefined,
             apellido: null
         }
     }
