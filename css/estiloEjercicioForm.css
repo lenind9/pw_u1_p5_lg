@@ -2,9 +2,61 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: monospace;
 }
 
 p:before {
     content: attr(type);
     display: block;
+    margin: 5px 2px;
+    font-size: 16px;
+    color: #5a5a5a;
+}
+
+.form {
+    width: 340px;
+    height: 400px;
+    background: #f3eeee;
+    border-radius: 8px;
+    padding: 20px 30px 0px;
+    box-shadow: 0px 0px 40px -5px #000;
+}
+
+input {
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #bebed2;
+    background: none;
+}
+
+input:focus {
+    border-bottom: 3px solid #78788c;
+}
+
+.boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background: #9c9cb1;
+    border-radius: 5px;
+    padding: 10px 75px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #45454d;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #8dd3e9;
 }

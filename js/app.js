@@ -1,14 +1,16 @@
 console.log("elementos Vue");
 console.log(Vue);
 
-const estudiantes = [{nombre: 'Lenin', apellido:'Guananga'}, 
+/*const estudiantes = [{nombre: 'Lenin', apellido:'Guananga'}, 
 {nombre: 'David', apellido:'Coronel'},
 {nombre: 'Nicolas', apellido:'Lema'},
 {nombre: 'Ailine', apellido:'Molina'},
 {nombre: '', apellido:'Sagredo'}];
 
 console.log(estudiantes)
-console.table(estudiantes)
+console.table(estudiantes)*/
+
+const personas = [];
 
 const app = Vue.createApp({
     // Options API
@@ -20,7 +22,7 @@ const app = Vue.createApp({
     //<p>{{false?'Verdadero': 'Falso'}}</p>
     //`
     methods:{
-        cambiarMensaje() {
+        /*cambiarMensaje() {
             console.log("Se esta cambiando el  mensaje")
             console.log(this.mensaje)
             this.mensaje='Valor cambiado'
@@ -45,6 +47,22 @@ const app = Vue.createApp({
         },
         presionandoEnterMod() {
             console.log("Presionando enter mod")
+        },*/
+        agregarPersona() {
+            console.log("Agregando formulario")
+            this.lista.push({
+                nombre: this.nombre,
+                apellido: this.apellido,
+                genero: this.genero,
+                edad: this.edad,
+                ciudad: this.ciudad,
+            });
+    
+            this.nombre = '';
+            this.apellido = '';
+            this.genero = '';
+            this.edad = '';
+            this.ciudad = '';
         }
     },
     watch:{
@@ -52,11 +70,15 @@ const app = Vue.createApp({
     },
     data(){
         return {
-            mensaje: 'Hola mundo desde Vue.JS',
+            /*mensaje: 'Hola mundo desde Vue.JS',
             valor: 100,
-            lista: estudiantes,
-            nombre: undefined,
-            apellido: null
+            lista: estudiantes,*/
+            nombre: '',
+            apellido: '',
+            genero: '',
+            edad: '',
+            ciudad: '',
+            lista: personas
         }
     }
 });

@@ -1,27 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
     <link rel="stylesheet" href="../css/estiloEjercicioForm.css">
-    <script src=""></script>
+    <!--CDN-->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
+
 <body>
     <div class="container">
         <header></header>
         <nav></nav>
         <section>
-            <form action="">
-                <p type="Nombre:"><input type="text"></p>
-                <p type="Apellido:"><input type="text"></p>
-                <p type="Edad:"><input type="text"></p>
-                <p type="Apellido:"><input type="text"></p>
-                <p type="Apellido:"><input type="text"></p>
-            </form>
+            <div id="miApp">
+                <form class="form">
+                    <p type="Nombre:"><input type="text" v-model="nombre"></p>
+                    <p type="Apellido:"><input type="text" v-model="apellido"></p>
+                    <p type="Genero:"><input type="text" v-model="genero"></p>
+                    <p type="Edad:"><input type="text" v-model="edad"></p>
+                    <p type="Ciudad:"><input type="text" v-model="ciudad"></p>
+                    <div class="boton">
+                        <button type="button" v-on:click="agregarPersona">Guardar</button>
+                    </div>
+                </form>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Genero</th>
+                            <th>Edad</th>
+                            <th>Ciudad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr v-for="({nombre, apellido, genero, edad, ciudad}, index) in lista">
+                            <td>{{nombre}}</td>
+                            <td>{{apellido}}</td>
+                            <td>{{genero}}</td>
+                            <td>{{edad}}</td>
+                            <td>{{ciudad}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
         </section>
         <footer></footer>
     </div>
+    <script src="../js/app.js"></script>
 </body>
+
 </html>
